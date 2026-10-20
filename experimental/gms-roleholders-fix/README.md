@@ -15,7 +15,7 @@ granted (`GET_ROLE_HOLDERS` absent from the install permissions, `SecurityExcept
 success was most likely not caused by the allowlist (inference). A freshly logged-in account, not this module,
 was what restored Play Store in the end.
 
-A pre-built zip is attached to the `allowlist-v1.0` pre-release. It is kept for reference only.
+A pre-built zip is attached to the `v1.0` release. It is kept for reference only.
 
 ## What happened
 

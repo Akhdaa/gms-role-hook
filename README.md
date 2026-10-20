@@ -70,7 +70,7 @@ then force-stop Google Play services.
 ## Experimental
 
 `experimental/gms-roleholders-fix` is an allowlist-based module that was tried first. It did **not** work; see
-its README. A pre-built zip is in the `allowlist-v1.0` pre-release (it worked only briefly).
+its README. A pre-built zip is attached to the `v1.0` release (it worked only briefly).
 
 ## License
 
