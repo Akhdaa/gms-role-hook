@@ -51,15 +51,6 @@ modules (for example Play Integrity Fix).
 
 Behaviour on other devices, ROMs or GMS versions is unknown.
 
-## Build (Windows + Git Bash)
-
-Needs a JDK and the Android SDK (`build-tools`, `platforms/android-36`). No Gradle.
-
-    ANDROID_HOME=/path/to/Sdk ./build.sh
-
-`build.sh` runs javac, d8, aapt2, zipalign and apksigner and writes `gms-role-hook.apk`, signed with a
-generated debug key. `_stubs/` holds compile-only copies of the Xposed API that Vector provides at runtime.
-
 ## Enable
 
     vector-cli modules enable io.xxru.gmsrolehook
