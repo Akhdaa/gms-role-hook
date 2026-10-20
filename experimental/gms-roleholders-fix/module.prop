@@ -1,0 +1,6 @@
+id=gms_roleholders_fix
+name=GMS Role Holders Fix
+version=1.0
+versionCode=1
+author=xxru
+description=Allowlist GET_ROLE_HOLDERS + OBSERVE_ROLE_HOLDERS for GmsCore so Play Store stops failing with "Authentication required" (AuthSecurityError).

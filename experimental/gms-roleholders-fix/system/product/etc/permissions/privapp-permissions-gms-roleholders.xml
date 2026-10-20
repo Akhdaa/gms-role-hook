@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Extra privapp grants for GmsCore, on top of privapp-permissions-google-product.xml.
+GMS 26.40.x calls RoleManager.getRoleHolders() during OAuth token fetch; without this
+grant it throws AUTH_SECURITY_ERROR and Play Store shows "Authentication required".
+-->
+<permissions>
+    <privapp-permissions package="com.google.android.gms">
+        <permission name="android.permission.GET_ROLE_HOLDERS"/>
+        <permission name="android.permission.OBSERVE_ROLE_HOLDERS"/>
+    </privapp-permissions>
+</permissions>
