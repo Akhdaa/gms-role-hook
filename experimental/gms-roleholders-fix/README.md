@@ -7,6 +7,16 @@ A KernelSU module that adds a privapp-permissions allowlist entry:
 
 Kept here only as a record of an approach that was tried.
 
+## Reported behaviour
+
+Installed through KernelSU Manager and rebooted: Play Store worked for a short time, then
+"Authentication is required" returned. During that window the logs still showed the permission as not
+granted (`GET_ROLE_HOLDERS` absent from the install permissions, `SecurityException` still thrown), so the brief
+success was most likely not caused by the allowlist (inference). A freshly logged-in account, not this module,
+was what restored Play Store in the end.
+
+A pre-built zip is attached to the `allowlist-v1.0` pre-release. It is kept for reference only.
+
 ## What happened
 
 - The allowlist was loaded by the system. Verified with
