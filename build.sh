@@ -33,7 +33,7 @@ echo "== zipalign + sign"
 "$BT/zipalign.exe" -f -p 4 build/base.apk build/aligned.apk
 KEYTOOL="$(command -v keytool || echo "${JAVA_HOME:-/c/Program Files/Java/jdk-25.0.2}/bin/keytool.exe")"
 [ -f debug.jks ] || "$KEYTOOL" -genkeypair -keystore debug.jks -storepass android -keypass android \
-    -alias key -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=xxru" >/dev/null 2>&1
+    -alias key -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=munch" >/dev/null 2>&1
 "$BT/apksigner.bat" sign --ks debug.jks --ks-pass pass:android --key-pass pass:android \
     --out gms-role-hook.apk build/aligned.apk
 "$BT/apksigner.bat" verify gms-role-hook.apk && echo "BUILD_OK gms-role-hook.apk"
